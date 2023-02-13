@@ -51,7 +51,8 @@ window.open("https://drive.google.com/file/d/1jAVNkEnHArRuRQZQQNAssEHqub5ECGJF/v
   document.getElementById("resume-button-2").onclick=()=>{
     window.open("https://drive.google.com/file/d/1jAVNkEnHArRuRQZQQNAssEHqub5ECGJF/view?usp=share_link");
   }
-
+     
+  
   function openNav() {
     document.getElementById("mySidebar").style.width = "250px";
     document.getElementById("main").style.display = "none";
