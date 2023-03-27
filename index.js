@@ -40,7 +40,7 @@ function typeWriter() {
 
   GitHubCalendar(".calendar", "manoharmeena123", {
     responsive: true,
-    global_stats: false,
+    global_stats: true,
     tooltips: true,
   });
 
