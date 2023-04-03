@@ -62,3 +62,17 @@ window.open("https://drive.google.com/file/d/1jxOaoMb_bnRJUPsgt6nNWbYPTYWvgCGU/v
     document.getElementById("mySidebar").style.width = "0";
     document.getElementById("main").style.display= "block";
   }
+
+  let mode = document.getElementById("mode");
+  mode.addEventListener("click", darkMode)
+
+  function darkMode(event){
+    let mode = event.target.alt;
+    if(mode == "dark"){
+      document.querySelector("body").style.backgroundColor = "rgb(21,74,129)";
+       event.target.alt = "light";
+    }else{
+      document.querySelector("body").style.backgroundColor = "#000";
+       event.target.alt = "dark";
+    }
+  }
