@@ -1,5 +1,5 @@
 let i=0;
-let txt="NodeJS Backend Developer.";
+let txt="Full Stack Web Developer.";
 let speed=75;
 
 typeWriter()
