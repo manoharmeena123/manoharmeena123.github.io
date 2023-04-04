@@ -3,8 +3,8 @@
 This is my portfolio created using HTML, CSS, JavaScript which includes my projects, github data , skills and brief details of my coding journey.
 
 ##TestCases
- ✅ Submitted link is a github.io link - 1 mark.
- ✅ Basic components (navbar, about, skills, projects, contact) present with respective IDs - 1 mark.
+- ✅ Submitted link is a github.io link - 1 mark.
+- ✅ Basic components (navbar, about, skills, projects, contact) present with respective IDs - 1 mark.
  ✅ Navbar contains required elements with respective IDs - 1 mark.
  ✅ Elements of the navbar are linked to the respective sections  - 5 marks.
  ✅ Name is present - 1 mark.
