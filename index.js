@@ -44,11 +44,11 @@ function typeWriter() {
     tooltips: true,
   });
 
-  document.getElementById("resume-link-1").onclick=()=>{
+  document.getElementById("resume-button-1").onclick=()=>{
 window.open("https://drive.google.com/file/d/19qQeKt0qR2R1WCpi8vNCU48BQ5DgiW6r/view?usp=share_link")
   }
 
-  document.getElementById("resume-link-2").onclick=()=>{
+  document.getElementById("resume-button-2").onclick=()=>{
    window.open("https://drive.google.com/file/d/19qQeKt0qR2R1WCpi8vNCU48BQ5DgiW6r/view?usp=share_link")
   }
      
