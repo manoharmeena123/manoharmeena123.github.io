@@ -1,3 +1,4 @@
+import GitHubCalendar from 'github-calendar';
 let i=0;
 let txt="Full Stack Web Developer.";
 let speed=75;
@@ -43,6 +44,8 @@ function typeWriter() {
     global_stats: false,
     tooltips: true,
   });
+ 
+  
 
   document.getElementById("resume-button-1").onclick=()=>{
 window.open("https://drive.google.com/file/d/17b2XXL8c0yUDit4tEIRIqgr37FLr-WxL/view?usp=sharing")
