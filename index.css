@@ -475,3 +475,70 @@ background-color: white;
   transition: all 0.4s;
   
 }
+
+/* Add this to your existing CSS file (index.css) */
+
+.calendar {
+  margin: 20px auto;
+  width: 70%;
+  font-family: Arial, sans-serif;
+}
+
+.calendar .contrib-legend {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.calendar .contrib-legend li {
+  list-style: none;
+  padding: 0 5px;
+}
+
+.calendar .day {
+  stroke: #ddd;
+  shape-rendering: geometricPrecision;
+  width: 25px; /* Increase the width of the cells */
+  height: 25px; /* Increase the height of the cells */
+}
+
+.calendar .month {
+  fill: none;
+  stroke: #ddd;
+  stroke-width: 2;
+}
+
+.calendar .wday {
+  font-size: 12px;
+  fill: #888;
+}
+
+.calendar .contrib-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #777;
+}
+
+.calendar .contrib-footer a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.calendar .contrib-footer a:hover {
+  text-decoration: underline;
+}
+
+.calendar .tooltip {
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  pointer-events: none;
+  position: absolute;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
