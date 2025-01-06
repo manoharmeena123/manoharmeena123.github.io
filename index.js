@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   let i = 0;
   let txt = "Full Stack Web Developer.";
   let speed = 75;
@@ -38,11 +38,15 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   document.getElementById("resume-button-1").onclick = () => {
-    window.open("https://drive.google.com/file/d/1mwlkNafEbCGPGcUxrzj2vXK9cb4e7rg7/view?usp=sharing");
+    window.open(
+      "https://drive.google.com/file/d/1mwlkNafEbCGPGcUxrzj2vXK9cb4e7rg7/view?usp=sharing"
+    );
   };
 
   document.getElementById("resume-button-2").onclick = () => {
-    window.open("https://drive.google.com/file/d/1mwlkNafEbCGPGcUxrzj2vXK9cb4e7rg7/view?usp=sharing");
+    window.open(
+      "https://drive.google.com/file/d/1mwlkNafEbCGPGcUxrzj2vXK9cb4e7rg7/view?usp=sharing"
+    );
   };
 
   function openNav() {
@@ -61,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
   function darkMode(event) {
     let mode = event.target.alt;
     if (mode == "dark") {
-      document.querySelector("body").style.backgroundColor = "rgb(21,74,129)";
+      document.querySelector("body").style.backgroundColor = "#66A5AD";
       event.target.alt = "light";
     } else {
       document.querySelector("body").style.backgroundColor = "#000";
