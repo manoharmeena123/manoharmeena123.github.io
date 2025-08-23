@@ -4,289 +4,682 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio_ManoharMeena</title>
+  <title>Manohar Meena - Full Stack Developer</title>
+  <meta name="description" content="Full Stack Web Developer specializing in MERN stack, React, Node.js, and modern web technologies" />
   <link rel="stylesheet" href="index.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
-<!-- Add these lines inside the <head> section -->
-  <link
-  rel="stylesheet"
-  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-/>
-<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- GitHub Calendar -->
+  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+  
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
-  <div id="mySidebar" class="sidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <div>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-      <a href="./resume/Manohar_Meena_Resume.pdf" download>Resume <i class="fa fa-download"></i></a>
-    </div>
-  </div>
-  <div id="main">
-    <button class="openbtn" onclick="openNav()">☰</button>
-  </div>
-
-  <div id="nav-menu">
-    <div class="logo">
-      <img class="logo-img" src="./images/Manohar_img.png.jpg" alt="" />
-      <h2>Manohar Meena</h2>
-    </div>
-    <div>
-      <a href="#home" class="nav-link home">Home</a>
-      <a href="#skills" class="nav-link skills">Skills</a>
-      <a href="#experience" class="nav-link skills">Experience</a>
-      <a href="#projects" class="nav-link projects">Projects</a>
-      <a href="#about" class="nav-link about">About</a>
-      <a href="#contact" class="nav-link contact">Contact</a>
-      <a href="./resume/Manohar_Meena_Resume.pdf" class="nav-link resume" id="resume-button-1" download>Resume <i class="fa fa-download"></i></a>
-      <a href="#"><img width="30px" id="mode" src="./images/dark-mode.png" alt="light" /></a>
-    </div>
-  </div>
-
-  <div id="width">
-    <div id="home">
-      <div>
-        <h1>👋 Hello, my name is</h1>
-        <p id="user-detail-name">Manohar Meena</p>
-        <h1 id="demo"><span> I'm a </span><span id="demo1"></span></h1>
+  <!-- Navigation -->
+  <nav id="nav-menu" class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <img class="logo-img" src="https://avatars.githubusercontent.com/u/108083768?v=4" alt="Manohar Meena" onload="console.log('Logo loaded:', this.src)" onerror="this.src='https://ui-avatars.com/api/?name=Manohar+Meena&size=100&background=6366f1&color=fff&bold=true'" />
+        <h2>Manohar Meena</h2>
+        <!-- Test image to debug -->
+        <img src="images/dd.png" alt="Test" style="width: 20px; height: 20px; margin-left: 10px;" onload="console.log('Test image loaded')" onerror="console.error('Test image failed')" />
       </div>
-      <img class="home-img" src="/images/Manohar_img.png.jpg" alt="" />
-    </div>
-
-    <!-------------------------------- About Section ---------------------------------------->
-    <div id="about" class="about section">
-      <h2 class="mid">About</h2>
-      <hr />
-      <p id="user-detail-intro">
-        I am a skilled web developer with experience in Node.js backend, frontend development, and DSA. I have contributed to building scalable, impactful web applications in collaborative environments. Driven by innovation, I thrive on delivering projects with real-world impact and look forward to bringing value to forward-thinking organizations.
-      </p>
-      <div id="aboutflex">
-        <a href="./resume/Manohar_Meena_Resume.pdf" id="resume-button-2" download>Resume <i class="fa fa-download"></i></a>
-        <div id="con">
-          <a target="_blank" href="https://www.linkedin.com/in/manohar-meena-1a132221b/"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="" /></a>
-          <a target="_blank" href="https://github.com/manoharmeena123"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" /></a>
-          <a target="_blank" href="mailto:manoharmeena245@gmail.com"><img src="https://w7.pngwing.com/pngs/105/439/png-transparent-white-and-blue-message-icon-illustration-email-computer-icons-symbol-message-inbox-by-gmail-envelope-miscellaneous-blue-angle-thumbnail.png" alt="" /></a>
-        </div>
+      <div class="nav-links">
+        <a href="#home" class="nav-link home">Home</a>
+        <a href="#about" class="nav-link about">About</a>
+        <a href="#skills" class="nav-link skills">Skills</a>
+        <a href="#experience" class="nav-link experience">Experience</a>
+        <a href="#projects" class="nav-link projects">Projects</a>
+        <a href="#contact" class="nav-link contact">Contact</a>
+        <a href="./resume/Manohar_Meena_Resume.pdf" class="nav-link resume" download>
+          <i class="fas fa-download"></i> Resume
+        </a>
+        <button class="theme-toggle" id="mode">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
-<!-------------------------------- Skills Section ---------------------------------------->
-<div id="skills">
-  <h2 class="mid">Skills</h2>
-  <hr />
-  <div id="grid">
-    <div class="skills-card">
-      <img class="skills-card-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
-      <p class="skills-card-name">HTML</p>
-    </div>
-    <div class="skills-card">
-      <img class="skills-card-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" />
-      <p class="skills-card-name">CSS</p>
-    </div>
-    <div class="skills-card">
-      <img class="skills-card-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
-      <p class="skills-card-name">JavaScript</p>
-    </div>
-    <div class="skills-card">
-      <img class="skills-card-img" src="https://chiranjeev-thapliyal.vercel.app/svg/nodejs.svg" alt="NodeJS" />
-      <p class="skills-card-name">NodeJS</p>
-    </div>
-    <div class="skills-card">
-      <img class="skills-card-img" src="https://rohithanss.github.io/skills/expressJs.png" alt="ExpressJS" />
-      <p class="skills-card-name">ExpressJS</p>
-    </div>
-    <div class="skills-card">
-      <img class="skills-card-img" src="https://chiranjeev-thapliyal.vercel.app/svg/mongodb.svg" alt="MongoDB" />
-      <p class="skills-card-name">MongoDB</p>
-    </div>
-    <div class="skills-card">
-      <img class="skills-card-img" src="./images/redis.png" alt="Redis" />
-      <p class="skills-card-name">Redis</p>
-    </div>
-    <div class="skills-card">
-      <img class="skills-card-img" src="https://chiranjeev-thapliyal.vercel.app/svg/git.svg" alt="Git" />
-      <p class="skills-card-name">Git</p>
-    </div>
-    <div class="skills-card">
-      <img class="skills-card-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
-      <p class="skills-card-name">React</p>
-    </div>
-    <div class="skills-card">
-      <img class="skills-card-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" />
-      <p class="skills-card-name">Next.js</p>
-    </div>
-    <div class="skills-card">
-      <img class="skills-card-img" src="https://mui.com/static/logo.png" alt="Material-UI" />
-      <p class="skills-card-name">Material-UI</p>
-    </div>
-    <div class="skills-card">
-      <img class="skills-card-img" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind CSS" />
-      <p class="skills-card-name">Tailwind CSS</p>
-    </div>
-    <div class="skills-card">
-      <img class="skills-card-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" alt="Redux Toolkit" />
-      <p class="skills-card-name">Redux Toolkit</p>
-    </div>
-    <div class="skills-card">
-      <img class="skills-card-img" src="https://redux-saga.js.org/img/Redux-Saga-Logo.png" alt="Redux Saga" />
-      <p class="skills-card-name">Redux Saga</p>
-    </div>
-    <div class="skills-card">
-      <img class="skills-card-img" src="data:image/png;base64,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"
-        alt=""
-      />
-      <p class="skills-card-name">Postman</p>
-    </div>
-  </div>
-</div>
+  </nav>
 
- <!-------------------------------- Experience Section ---------------------------------------->
-<!-- Add this section to your HTML -->
-<div id="experience">
-  <h2 class="mid">Experience</h2>
-  <hr />
-  <div class="experience-container">
-    <!-- Experience 1 -->
-    <div class="experience-card">
-      <h3 class="experience-title">Mern Stack Developer</h3>
-      <p class="experience-company">Progshee Technologies - Full-time</p>
-      <p class="experience-duration">Apr 2024 - Dec 2024 (9 months)</p>
-      <p class="experience-location">Indore, Madhya Pradesh, India - Remote</p>
+  <!-- Mobile Sidebar -->
+  <div id="mobileSidebar" class="mobile-sidebar">
+    <div class="sidebar-header">
+      <h3>Menu</h3>
+      <button class="close-sidebar" onclick="closeSidebar()">
+        <i class="fas fa-times"></i>
+      </button>
     </div>
-    <!-- Experience 2 -->
-    <div class="experience-card">
-      <h3 class="experience-title">Frontend Web Developer</h3>
-      <p class="experience-company">Codezilla - Full-time</p>
-      <p class="experience-duration">Sep 2023 - Mar 2024 (7 months)</p>
-      <p class="experience-location">Indore, Madhya Pradesh, India - On-site</p>
-    </div>
-    <!-- Experience 3 -->
-    <div class="experience-card">
-      <h3 class="experience-title">Associate Software Engineer</h3>
-      <p class="experience-company">Softinator Group of Industries - Full-time</p>
-      <p class="experience-duration">Apr 2022 - Aug 2023 (1 year 5 months)</p>
-      <p class="experience-location">Indore, Madhya Pradesh, India - Hybrid</p>
-    </div>
-  </div>
-</div>
-
-
-      <!-------------------------------- Project Section ---------------------------------------->
-      <div id="projects">
-        <h2 class="mid">Projects</h2>
-        <hr />
-        <div class="projects-container">
-          <div class="project-card">
-            <img src="./images/dd.png" alt="The Winners Institute" class="project-image" />
-            <p class="project-title">Disruptive Doctors</p>
-            <div class="projectlinks">
-              <a target="_blank" href="https://website-disruptive-doctors.segwitz.dev/" class="project-button live-link">Live Demo</a>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="./images/winners.png" alt="The Winners Institute" class="project-image" />
-            <p class="project-title">The Winners Institute</p>
-            <div class="projectlinks">
-              <a target="_blank" href="https://www.winnersinstitute.in/" class="project-button live-link">Live Demo</a>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="./images/winner-students-databse.png" alt="The Winners Institute" class="project-image" />
-            <p class="project-title">Student Inventry</p>
-            <div class="projectlinks">
-              <a target="_blank" href="https://students.winnersinstitute.in/" class="project-button live-link">Live Demo</a>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="/images/upsale.png" alt="Upsale" class="project-image" />
-            <p class="project-title">Upsale</p>
-            <div class="projectlinks">
-              <a target="_blank" href="https://upsalesuite.com/" class="project-button live-link">Live Demo</a>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="./images/hirelab.png" alt="Hirelab" class="project-image" />
-            <p class="project-title">Hirelab</p>
-     
-            <div class="projectlinks">
-              <a target="_blank" href="https://hirelabapi.vercel.app/" class="project-button live-link">Live Demo</a>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="/images/bank.png" alt="CTAS Service Pvt Ltd" class="project-image" />
-            <p class="project-title">CTAS Service Pvt Ltd</p>
-            <div class="projectlinks">
-              <a target="_blank" href="https://b4nkd-admin-panel-frontend.vercel.app/sign-in/" class="project-button live-link">Live Demo</a>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="/images/bank.png" alt="CTAS Service Pvt Ltd" class="project-image" />
-            <p class="project-title">Single Debt crm</p>
-            <div class="projectlinks">
-              <a target="_blank" href="https://single-debt-crm-buqy.vercel.app/" class="project-button live-link">Live Demo</a>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="/images/naseni.png" alt="Naseni" class="project-image" />
-            <p class="project-title">Naseni</p>
-            <div class="projectlinks">
-              <a target="_blank" href="https://erp.naseni.xyz/login" class="project-button live-link">Live Demo</a>
-            </div>
-          </div>
-        </div>
-
-
-      </div>
-
-      <!-------------------------------- Github Section ---------------------------------------->
-      <div id="stats">
-        <h2 class="mid">Github Stats</h2>
-        <hr />
-        <div>
-          <img id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=manoharmeena123&lans-count=4" alt="" />
-          <div id="statsimg">
-            <img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=manoharmeena123&show_icons=true&locale=en" alt="" />
-            <img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com?user=manoharmeena123&" alt="" />
-          </div>
-        </div>
-      </div>
-
-      <!-------------------------------- Github Calendar Section ---------------------------------------->
-      <div id="calendar">
-        <h2 class="mid">Github Calendar</h2>
-        <hr />
-        <div class="react-activity-calendar calendar">
-          <!-- GitHub Calendar will render dynamically here -->
-          Loading your contributions...
-        </div>
-      </div>
-      
-      <!-------------------------------- Contact Section ---------------------------------------->
-      <div id="contact">
-        <h2 class="mid">Contact</h2>
-        <hr />
-        <div class="contactflex">
-          <a target="_blank" id="contact-github" href="https://github.com/manoharmeena123"><p><i class="fa fa-github"></i> Github</p></a>
-        </div>
-        <div class="contactflex">
-          <a target="_blank" id="contact-linkedin" href="https://www.linkedin.com/in/manohar-meena-1a132221b/"><p><i class="fa fa-linkedin"></i> Linkedin</p></a>
-        </div>
-        <div class="contactflex">
-          <a href=""><p id="contact-phone"><i class="fa fa-phone"></i> 7771960361</p></a>
-        </div>
-        <div class="contactflex">
-          <a target="_blank" id="contact-email"><p><i class="fa fa-envelope"></i> manoharmeena245@gmail.com</p></a>
-        </div>
-      </div>
+    <div class="sidebar-links">
+      <a href="#home" onclick="closeSidebar()">Home</a>
+      <a href="#about" onclick="closeSidebar()">About</a>
+      <a href="#skills" onclick="closeSidebar()">Skills</a>
+      <a href="#experience" onclick="closeSidebar()">Experience</a>
+      <a href="#projects" onclick="closeSidebar()">Projects</a>
+      <a href="#contact" onclick="closeSidebar()">Contact</a>
+      <a href="./resume/Manohar_Meena_Resume.pdf" download onclick="closeSidebar()">
+        <i class="fas fa-download"></i> Resume
+      </a>
     </div>
   </div>
 
-  <!-- Include custom JavaScript -->
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
+          <div class="greeting">
+            <span class="wave">👋</span>
+            <span>Hello, I'm</span>
+          </div>
+          <h1 class="hero-title" id="user-detail-name">Manohar Meena</h1>
+          <div class="hero-subtitle">
+            <span>I'm a </span>
+            <span class="typing-text" id="demo1"></span>
+            <span class="cursor">|</span>
+          </div>
+          <p class="hero-description">
+            Passionate Full Stack Developer crafting digital experiences with modern technologies
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fas fa-eye"></i> View My Work
+            </a>
+            <a href="./resume/Manohar_Meena_Resume.pdf" class="btn btn-secondary" download>
+              <i class="fas fa-download"></i> Download Resume
+            </a>
+          </div>
+        </div>
+        <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
+          <div class="image-container">
+            <img src="https://avatars.githubusercontent.com/u/108083768?v=4" alt="Manohar Meena" onload="console.log('Hero loaded:', this.src)" onerror="this.src='https://ui-avatars.com/api/?name=Manohar+Meena&size=400&background=6366f1&color=fff&bold=true'" />
+            <div class="floating-card">
+              <div class="card-content">
+                <i class="fas fa-code"></i>
+                <span>Full Stack Developer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-arrow"></div>
+        <span>Scroll Down</span>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">About Me</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="about-content">
+          <div class="about-text" data-aos="fade-right" data-aos-delay="200">
+            <p id="user-detail-intro">
+              I am a skilled web developer with experience in Node.js backend, frontend development, and DSA. I have contributed to building scalable, impactful web applications in collaborative environments. Driven by innovation, I thrive on delivering projects with real-world impact and look forward to bringing value to forward-thinking organizations.
+            </p>
+            <div class="about-stats">
+              <div class="stat-item">
+                <span class="stat-number">3+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">20+</span>
+                <span class="stat-label">Projects Completed</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">5+</span>
+                <span class="stat-label">Technologies</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-social" data-aos="fade-left" data-aos-delay="400">
+            <h3>Connect With Me</h3>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/manohar-meena-1a132221b/" target="_blank" class="social-link linkedin">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://github.com/manoharmeena123" target="_blank" class="social-link github">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </a>
+              <a href="mailto:manoharmeena245@gmail.com" class="social-link email">
+                <i class="fas fa-envelope"></i>
+                <span>Email</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Skills & Technologies</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="skills-grid" data-aos="fade-up" data-aos-delay="200">
+          <div class="skill-category">
+            <h3 class="category-title">Frontend</h3>
+            <div class="skills-container">
+              <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwIDI4LjEyNUwxMi4xMjUgMTBIMzcuODc1TDM2LjI1IDM1LjYyNUwyNSAzNy41TDEzLjc1IDM1LjYyNUwxMCAyOC4xMjVaIiBmaWxsPSIjRjQ2NjMzIi8+CjxwYXRoIGQ9Ik0yNSAzNlYyNkgxMi4xMjVMMTMuNzUgMzUuNjI1TDI1IDM2WiIgZmlsbD0iI0Y0NjYzMyIvPgo8cGF0aCBkPSJNMjUgMjZIMjAuNjI1TDIwLjM3NSAyNEgyNVYyNloiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0yNSAyNEgyMC4xMjVMMTkuODc1IDIySDI1VjI0WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTI1IDIySDE4LjEyNUwxNy44NzUgMjBIMjVWMjJaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K'" />
+                <span>HTML5</span>
+              </div>
+              <div class="skill-card" data-aos="zoom-in" data-aos-delay="150">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwIDhMMTIuNSAzOEwyNSA0MkwzNy41IDM4TDQwIDhIMTBaIiBmaWxsPSIjMTU3MkI2Ii8+CjxwYXRoIGQ9Ik0yNSAzOFYyNkgxMi4xMjVMMTEuMjUgMTBIMjVWMjZaIiBmaWxsPSIjMTU3MkI2Ii8+CjxwYXRoIGQ9Ik0yNSAyNlYyNEgyMC42MjVMMjAuMzc1IDIySDI1VjI2WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTI1IDIySDIwLjEyNUwxOS44NzUgMjBIMjVWMjJaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K'" />
+                <span>CSS3</span>
+              </div>
+              <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwIDhIMjBMMjIgMjBIMzBMMzIgOEg0Mkw0MCAyNEgyMkwxMCA4WiIgZmlsbD0iI0ZGRDcwMCIvPgo8cGF0aCBkPSJNMzAgMjBIMjJMMjAgMzJIMzBMMzIgMjBIMzBaIiBmaWxsPSIjRkZENzAwIi8+Cjwvc3ZnPgo='" />
+                <span>JavaScript</span>
+              </div>
+              <div class="skill-card" data-aos="zoom-in" data-aos-delay="250">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjUiIGN5PSIyNSIgcj0iMjAiIGZpbGw9IiM2MENEQUYiLz4KPHBhdGggZD0iTTI1IDVMMzAgMjBMMjUgMzVMMjAgMjBMMjUgNVoiIGZpbGw9IiM2MENEQUYiLz4KPHBhdGggZD0iTTEwIDIwTDI1IDVMMjAgMjBMMjUgMzVMMTAgMjBaIiBmaWxsPSIjNjBDREFFIi8+CjxwYXRoIGQ9Ik0yNSAzNUwzMCAyMEwyNSA1TDIwIDIwTDI1IDM1WiIgZmlsbD0iIzYwQ0RBRSIvPgo8L3N2Zz4K'" />
+                <span>React</span>
+              </div>
+              <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwIDhIMjBMMjIgMjBIMzBMMzIgOEg0Mkw0MCAyNEgyMkwxMCA4WiIgZmlsbD0iIzAwMDAwMCIvPgo8cGF0aCBkPSJNMzAgMjBIMjJMMjAgMzJIMzBMMzIgMjBIMzBaIiBmaWxsPSIjMDAwMDAwIi8+Cjwvc3ZnPgo='" />
+                <span>Next.js</span>
+              </div>
+              <div class="skill-card" data-aos="zoom-in" data-aos-delay="350">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwIDhIMjBMMjIgMjBIMzBMMzIgOEg0Mkw0MCAyNEgyMkwxMCA4WiIgZmlsbD0iIzMxN0JjQyIvPgo8cGF0aCBkPSJNMzAgMjBIMjJMMjAgMzJIMzBMMzIgMjBIMzBaIiBmaWxsPSIjMzE3QmNDIi8+Cjwvc3ZnPgo='" />
+                <span>TypeScript</span>
+              </div>
+              <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwIDhIMjBMMjIgMjBIMzBMMzIgOEg0Mkw0MCAyNEgyMkwxMCA4WiIgZmlsbD0iIzU5MkZGRiIvPgo8cGF0aCBkPSJNMzAgMjBIMjJMMjAgMzJIMzBMMzIgMjBIMzBaIiBmaWxsPSIjNTkyRkZGIi8+Cjwvc3ZnPgo='" />
+                <span>Bootstrap</span>
+              </div>
+              <div class="skill-card" data-aos="zoom-in" data-aos-delay="450">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Sass" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwIDhIMjBMMjIgMjBIMzBMMzIgOEg0Mkw0MCAyNEgyMkwxMCA4WiIgZmlsbD0iI0NDNjY5OSIvPgo8cGF0aCBkPSJNMzAgMjBIMjJMMjAgMzJIMzBMMzIgMjBIMzBaIiBmaWxsPSIjQ0M2Njk5Ii8+Cjwvc3ZnPgo='" />
+                <span>Sass</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="skill-category">
+            <h3 class="category-title">Backend</h3>
+            <div class="skills-container">
+              <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="NodeJS" />
+                <span>Node.js</span>
+              </div>
+              <div class="skill-card" data-aos="zoom-in" data-aos-delay="150">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="ExpressJS" />
+                <span>Express.js</span>
+              </div>
+              <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" />
+                <span>MongoDB</span>
+              </div>
+              <div class="skill-card" data-aos="zoom-in" data-aos-delay="250">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis" />
+                <span>Redis</span>
+              </div>
+              <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" />
+                <span>MySQL</span>
+              </div>
+              <div class="skill-card" data-aos="zoom-in" data-aos-delay="350">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" />
+                <span>PostgreSQL</span>
+              </div>
+              <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+                <span>Python</span>
+              </div>
+              <div class="skill-card" data-aos="zoom-in" data-aos-delay="450">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+                <span>Java</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="skill-category">
+            <h3 class="category-title">Tools & Others</h3>
+            <div class="skills-container">
+              <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+                <span>Git</span>
+              </div>
+              <div class="skill-card" data-aos="zoom-in" data-aos-delay="150">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+                <span>GitHub</span>
+              </div>
+              <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" />
+                <span>Docker</span>
+              </div>
+              <div class="skill-card" data-aos="zoom-in" data-aos-delay="250">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aws/aws-original.svg" alt="AWS" />
+                <span>AWS</span>
+              </div>
+              <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original.svg" alt="Heroku" />
+                <span>Heroku</span>
+              </div>
+              <div class="skill-card" data-aos="zoom-in" data-aos-delay="350">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" />
+                <span>VS Code</span>
+              </div>
+              <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" />
+                <span>Figma</span>
+              </div>
+              <div class="skill-card" data-aos="zoom-in" data-aos-delay="450">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman" />
+                <span>Postman</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="skill-category">
+            <h3 class="category-title">Frameworks & Libraries</h3>
+            <div class="skills-container">
+              <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" alt="Redux" />
+                <span>Redux</span>
+              </div>
+              <div class="skill-card" data-aos="zoom-in" data-aos-delay="150">
+                <img src="https://mui.com/static/logo.png" alt="Material-UI" />
+                <span>Material-UI</span>
+              </div>
+              <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind CSS" />
+                <span>Tailwind CSS</span>
+              </div>
+              <div class="skill-card" data-aos="zoom-in" data-aos-delay="250">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" alt="jQuery" />
+                <span>jQuery</span>
+              </div>
+              <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg" alt="Webpack" />
+                <span>Webpack</span>
+              </div>
+              <div class="skill-card" data-aos="zoom-in" data-aos-delay="350">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/babel/babel-original.svg" alt="Babel" />
+                <span>Babel</span>
+              </div>
+              <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eslint/eslint-original.svg" alt="ESLint" />
+                <span>ESLint</span>
+              </div>
+              <div class="skill-card" data-aos="zoom-in" data-aos-delay="450">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prettier/prettier-original.svg" alt="Prettier" />
+                <span>Prettier</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Professional Experience</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="timeline" data-aos="fade-up" data-aos-delay="200">
+          <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Frontend Developer</h3>
+                <span class="company">SegWitz Sdn Bhd</span>
+              </div>
+              <div class="timeline-details">
+                <span class="duration"><i class="fas fa-calendar"></i> Jan 2025 - Present</span>
+                <span class="location"><i class="fas fa-map-marker-alt"></i>Selangor, Malaysia - Remote</span>
+              </div>
+              <p class="timeline-description">
+                Currently working as a Frontend Developer, developing and maintaining web applications using modern technologies. 
+                Contributing to innovative projects and collaborating with cross-functional teams to deliver high-quality software solutions.
+              </p>
+            </div>
+          </div>
+          
+          <div class="timeline-item" data-aos="fade-left" data-aos-delay="400">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>MERN Stack Developer</h3>
+                <span class="company">Progshee Technologies</span>
+              </div>
+              <div class="timeline-details">
+                <span class="duration"><i class="fas fa-calendar"></i> Apr 2024 - Dec 2024 (9 months)</span>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Indore, MP - Remote</span>
+              </div>
+              <p class="timeline-description">
+                Developed and maintained full-stack web applications using MERN stack technologies. 
+                Implemented RESTful APIs, database design, and responsive frontend interfaces. 
+                Collaborated with team members to deliver high-quality software solutions.
+              </p>
+            </div>
+          </div>
+          
+          <div class="timeline-item" data-aos="fade-right" data-aos-delay="500">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Frontend Web Developer</h3>
+                <span class="company">Codezilla</span>
+              </div>
+              <div class="timeline-details">
+                <span class="duration"><i class="fas fa-calendar"></i> Sep 2023 - Mar 2024 (7 months)</span>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Indore, MP - On-site</span>
+              </div>
+              <p class="timeline-description">
+                Built responsive and interactive user interfaces using modern frontend technologies. 
+                Implemented responsive design principles, optimized performance, and ensured cross-browser compatibility. 
+                Worked closely with designers and backend developers to create seamless user experiences.
+              </p>
+            </div>
+          </div>
+          
+          <div class="timeline-item" data-aos="fade-left" data-aos-delay="600">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Associate Software Engineer</h3>
+                <span class="company">Softinator Group of Industries</span>
+              </div>
+              <div class="timeline-details">
+                <span class="duration"><i class="fas fa-calendar"></i> Apr 2022 - Aug 2023 (1 year 5 months)</span>
+                <span class="location"><i class="fas fa-map-marker-alt"></i> Indore, MP - Hybrid</span>
+              </div>
+              <p class="timeline-description">
+                Contributed to software development projects and gained foundational experience in web technologies. 
+                Participated in code reviews, debugging, and testing processes. 
+                Developed problem-solving skills and learned industry best practices.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="projects-grid" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+            <div class="project-image">
+              <img src="./images/dd.png" alt="Disruptive Doctors" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://website-disruptive-doctors.segwitz.dev/" target="_blank" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Disruptive Doctors</h3>
+              <p class="project-description">Healthcare platform built with modern web technologies</p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MongoDB</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="zoom-in" data-aos-delay="150">
+            <div class="project-image">
+              <img src="./images/winners.png" alt="The Winners Institute" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://www.winnersinstitute.in/" target="_blank" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">The Winners Institute</h3>
+              <p class="project-description">Educational institute management system</p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag">MongoDB</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+            <div class="project-image">
+              <img src="./images/winner-students-databse.png" alt="Student Inventory" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://students.winnersinstitute.in/" target="_blank" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Student Inventory</h3>
+              <p class="project-description">Student management and database system</p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MongoDB</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="zoom-in" data-aos-delay="250">
+            <div class="project-image">
+              <img src="./images/upsale.png" alt="Upsale" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://upsalesuite.com/" target="_blank" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Upsale</h3>
+              <p class="project-description">Sales and CRM platform</p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag">PostgreSQL</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
+            <div class="project-image">
+              <img src="./images/hirelab.png" alt="Hirelab" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://hirelabapi.vercel.app/" target="_blank" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Hirelab</h3>
+              <p class="project-description">Hiring and recruitment platform</p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MongoDB</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="zoom-in" data-aos-delay="350">
+            <div class="project-image">
+              <img src="./images/bank.png" alt="CTAS Service" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://b4nkd-admin-panel-frontend.vercel.app/sign-in/" target="_blank" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">CTAS Service</h3>
+              <p class="project-description">Banking and financial services platform</p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag">MySQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GitHub Stats Section -->
+    <section id="stats" class="stats-section section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">GitHub Statistics</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="stats-grid" data-aos="fade-up" data-aos-delay="200">
+          <div class="stats-card" data-aos="zoom-in" data-aos-delay="100">
+            <img id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=manoharmeena123&layout=compact&theme=dark&hide_border=true" alt="Top Languages" />
+          </div>
+          <div class="stats-card" data-aos="zoom-in" data-aos-delay="200">
+            <img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=manoharmeena123&show_icons=true&theme=dark&hide_border=true" alt="GitHub Stats" />
+          </div>
+          <div class="stats-card" data-aos="zoom-in" data-aos-delay="300">
+            <img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com/?user=manoharmeena123&theme=dark&hide_border=true" alt="GitHub Streak" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GitHub Calendar Section -->
+    <section id="calendar" class="calendar-section section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Contribution Activity</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="calendar-container" data-aos="fade-up" data-aos-delay="200">
+          <div class="react-activity-calendar calendar"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="contact-content" data-aos="fade-up" data-aos-delay="200">
+          <div class="contact-info">
+            <h3>Let's work together!</h3>
+            <p>I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.</p>
+          </div>
+          <div class="contact-methods">
+            <a href="https://github.com/manoharmeena123" target="_blank" class="contact-method github">
+              <div class="contact-icon">
+                <i class="fab fa-github"></i>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">manoharmeena123</span>
+              </div>
+            </a>
+            
+            <a href="https://www.linkedin.com/in/manohar-meena-1a132221b/" target="_blank" class="contact-method linkedin">
+              <div class="contact-icon">
+                <i class="fab fa-linkedin"></i>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">LinkedIn</span>
+                <span class="contact-value">manohar-meena-1a132221b</span>
+              </div>
+            </a>
+            
+            <a href="mailto:manoharmeena245@gmail.com" class="contact-method email">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">Email</span>
+                <span class="contact-value">manoharmeena245@gmail.com</span>
+              </div>
+            </a>
+            
+            <a href="tel:+917771960361" class="contact-method phone">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-details">
+                <span class="contact-label">Phone</span>
+                <span class="contact-value">+91 7771960361</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="https://avatars.githubusercontent.com/u/108083768?v=4" alt="Manohar Meena" onload="console.log('Footer loaded:', this.src)" onerror="this.src='https://ui-avatars.com/api/?name=Manohar+Meena&size=100&background=6366f1&color=fff&bold=true'" />
+          <h3>Manohar Meena</h3>
+        </div>
+        <p class="footer-description">
+          Full Stack Developer passionate about creating innovative web solutions
+        </p>
+        <div class="footer-social">
+          <a href="https://github.com/manoharmeena123" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/manohar-meena-1a132221b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:manoharmeena245@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Manohar Meena. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
   <script src="index.js"></script>
 </body>
 </html>
